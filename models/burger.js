@@ -1,31 +1,36 @@
+// @author: Thomas Thompson
+// @github: tomtom28
+// @comment: Homework 14 - Eat the Burger!
+
+
+
+// Node Dependency
 var orm = require('../config/orm.js');
 
+
+// create the code that will call the ORM functions using burger specific input for the ORM.
 var burger = {
-  selectAll: function(cb){
-    orm.selectAll('burgers', function(res){
-      cb(res);
+
+  selectAll: function(callback){
+    orm.selectAll(function(res){
+      callback(res);
     });
   },
-  getMenu: function(cb){
-    orm.selectAll('menu', function(res){
-      cb(res);
+
+  insertOne: function(burger_name, callback){
+    orm.insertOne(burger_name, function(res){
+      callback(res);
     });
   },
-  insertOne: function(val, cb){
-    orm.insertOne('burgers', 'burger_name', val, function(res){
-      cb(res);
-    });
-  },
-  updateOne: function(colVal, conditionVal, cb){
-    orm.updateOne('burgers', 'devoured', colVal, 'id', conditionVal, function(res){
-      cb(res);
-    });
-  },
-  deleteOne: function(conditionVal, cb){
-    orm.deleteOne('burgers', 'id', conditionVal, function(res){
-      cb(res);
+
+  updateOne: function(burger_id, callback){
+    orm.updateOne(burger_id, function(res){
+      callback(res);
     });
   }
+
 };
 
+
+// Export at the end of the burger.js file.
 module.exports = burger;
