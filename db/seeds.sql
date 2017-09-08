@@ -1,10 +1,23 @@
+INSERT INTO burgers (burger_name) VALUES ('Mushroom Swiss Burger');
+INSERT INTO burgers (burger_name) VALUES ('Southwestern Veggie Burger');
+INSERT INTO burgers (burger_name) VALUES ('Spinach Artichoke Turkey Burger');
+INSERT INTO burgers (burger_name) VALUES ('Black & Bleu Burger');
 
--- Seed Burgers into Database ... No Sesame! (hehehe)
-INSERT INTO burgers(burger_name, devoured, date)
-VALUES ("Big Mac", false, "2016-11-05 04:20:00"),
-  ("Whooper", false, "2016-11-05 04:20:01"),
-  ("Cheezburger", false, "2016-11-05 04:20:02"),
-  ("Baconator", false, "2016-11-05 16:20:00"),
-  ("Quarter Pounder", false, "2016-11-05 16:20:01"),
-  ("McRoyal", false, "2016-11-05 04:20:20"),
-  ("Double Double", true, "2016-11-05 16:20:16");
+INSERT INTO menu (item) VALUES ('Mushroom Swiss Burger');
+INSERT INTO menu (item) VALUES ('Southwestern Veggie Burger');
+INSERT INTO menu (item) VALUES ('Spinach Artichoke Turkey Burger');
+INSERT INTO menu (item) VALUES ('Grilled Teriyaki Chicken Burger');
+INSERT INTO menu (item) VALUES ('Portobello Bacon Burger');
+INSERT INTO menu (item) VALUES ('Cheeseburger');
+INSERT INTO menu (item) VALUES ('Cowboy Whiskey Burger');
+INSERT INTO menu (item) VALUES ('Garden & shroom Burger');
+INSERT INTO menu (item) VALUES ('Chef Special Burger');
+INSERT INTO menu (item) VALUES ('Monster Burger');
+
+INSERT INTO menu (item, entree) VALUES ('French Fries', 0);
+INSERT INTO menu (item, entree) VALUES ('Cheese Fries', 0);
+INSERT INTO menu (item, entree) VALUES ('Onion Rings', 0);
+INSERT INTO menu (item, entree) VALUES ('Garden Salad', 0);
+INSERT INTO menu (item, entree) VALUES ('Caesar Salad', 0);
+INSERT INTO menu (item, entree) VALUES ('Curly Fries', 0);
+INSERT INTO menu (item, entree) VALUES ('Waffle Fries', 0);

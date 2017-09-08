@@ -1,17 +1,10 @@
-
-body {
-  background-color: #f4c242;
+body{
+  background: url('../images/burgerBG.jpg');
+  font-family: 'Coiny', cursive, serif;
+  font-size: 16px;
 }
 
-img {
-  width: 15%;
+.card{
+  padding: 2px;
 }
 
-.red_font {
-  color: #bc001f;
-}
-
-.tiny_text {
-  font-size: 11px;
-  color: #5da82f;
-}

@@ -1,13 +1,18 @@
-
--- Database Creation
 CREATE DATABASE burgers_db;
 
 USE burgers_db;
 
-
--- Table Creation
 CREATE TABLE burgers(
-id INTEGER AUTO_INCREMENT PRIMARY KEY,
-burger_name VARCHAR(50),
-devoured BOOLEAN,
-date TIMESTAMP);
+  id INT AUTO_INCREMENT NOT NULL,
+  burger_name VARCHAR(50) NOT NULL,
+  devoured BOOLEAN NOT NULL DEFAULT 0,
+  date TIMESTAMP NOT NULL,
+  PRIMARY KEY(id)
+);
+
+CREATE TABLE menu(
+  id INT AUTO_INCREMENT NOT NULL,
+  item VARCHAR(50) NOT NULL,
+  entree BOOLEAN NOT NULL DEFAULT 1,
+  PRIMARY KEY(id)
+);
